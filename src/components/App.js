@@ -31,13 +31,13 @@ function App() {
   };
 
   return (
-    <div>
+    <div id="main">
       <h1>Task Manager</h1>
-      <button onClick={addTodo}>Add todo</button>
-      <button onClick={incrementCounter}>Increment counter</button>
+      <button id="add-todo-btn" onClick={addTodo}>Add todo</button>
+      <button id="incr-cnt" onClick={incrementCounter}>Increment counter</button>
       <UseMemo />
       <ReactMemo tasks={tasks} />
-      <input type="text" value={customTask} onChange={handleCustomTaskChange} />
+      <input type="text" id="skill-input" value={customTask} onChange={handleCustomTaskChange} />
       <button onClick={submitCustomTask}>Submit custom task</button>
     </div>
   );
